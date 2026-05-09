@@ -333,16 +333,18 @@
 
     .message {
       width: 100%;
-      padding: 18px 16px;
-      border-radius: 20px;
-      background: rgba(255, 240, 246, 0.92);
-      border: 1px solid rgba(255, 77, 125, 0.12);
-      border-left: 6px solid #ff5d88;
-      font-size: 15px;
-      line-height: 1.85;
-      color: #5e4250;
+      padding: 24px 22px;
+      border-radius: 24px;
+      background: linear-gradient(180deg, rgba(255,245,248,0.96), rgba(255,239,244,0.92));
+      border: 1px solid rgba(255, 77, 125, 0.10);
+      border-left: 7px solid #ff5d88;
+      font-size: 17px;
+      line-height: 2;
+      letter-spacing: 0.2px;
+      color: #5c4450;
       text-align: left;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
+      box-shadow: 0 10px 25px rgba(255, 77, 125, 0.08), inset 0 1px 0 rgba(255,255,255,0.8);
+      backdrop-filter: blur(8px);
     }
 
     .signature {
@@ -424,8 +426,10 @@
         <h1>Happy Mother’s Day</h1>
 
         <div class="message">
-          I’m so happy you came into our lives, especially mine. At a time when I had almost given up on a mother’s love, you changed that for me completely. Your care, support, and presence mean more than I can ever explain.<br><br>
-          I truly believe we’ll become stronger than ever and build a very happy, loving, and prosperous family together, InshAllah. May Allah always keep you smiling, healthy, and blessed. 🌸
+          I’m so happy you came into our lives, especially mine.<br><br>
+          At a time when I had almost given up on a mother’s love, you changed that for me completely. Your care, support, and presence mean more than I can ever explain.<br><br>
+          I truly believe we’ll become stronger than ever and build a very happy, loving, and prosperous family together, InshAllah.<br><br>
+          May Allah always keep you smiling, healthy, and blessed. 🌸
         </div>
 
         <div class="footer-heart">❤️ ❤️ ❤️</div>
@@ -497,6 +501,7 @@
 
       // Gentle music start on tap/click.
       bgMusic.volume = 0.55;
+      bgMusic.currentTime = 3;
       bgMusic.play().catch(() => {});
 
       // Extra hearts after opening for a premium feel.
